@@ -7,7 +7,8 @@ import mlflow.xgboost
 import joblib
 from mlflow import MlflowClient
 
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
+import os
+mlflow.set_tracking_uri(f"sqlite:///{os.path.join(os.getcwd(), 'mlflow.db')}")
 
 CLS_VERSION = 1
 REG_VERSION = 1
