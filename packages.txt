@@ -1,0 +1,9 @@
+streamlit
+mlflow
+xgboost
+scikit-learn
+pandas
+numpy
+joblib
+pyarrow
+EOF
